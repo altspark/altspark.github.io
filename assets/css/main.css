@@ -2384,17 +2384,22 @@ input[type="radio"]:focus+label:before {
     cursor: default;
 }
 
-.icon.major:before {
+.icon.major {
     display: inline-block;
     font-size: 6.25rem;
     width: 2.25em;
     height: 2.25em;
     line-height: 2.2em;
     border-radius: 100%;
-    border: solid 1px;
+    border: solid 10px;
     text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(175, 95, 55, 0.15);
 }
-
+.icon.major+h3{
+  font-weight: bold;
+}
 .icon.alt {
     display: inline-block;
     border: solid 1px;
@@ -2412,13 +2417,21 @@ input[type="radio"]:focus+label:before {
 
 .icon.style1 {
     color: #efa8b0;
-}
-
-.icon.style2 {
-    color: #c79cc8;
+    background-image: url('images/zoho.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .icon.style3 {
+    color: #c79cc8;
+    background-image: url('images/jira.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon.style2 {
     color: #a89cc8;
 }
 
@@ -2428,33 +2441,16 @@ input[type="radio"]:focus+label:before {
 
 .icon.style5 {
     color: #8cc9f0;
-}
-
-@media screen and (max-width: 1680px) {
-
-    .icon.major:before {
-        font-size: 5.5rem;
-    }
-
-}
-
-@media screen and (max-width: 1280px) {
-
-    .icon.major:before {
-        font-size: 4.75rem;
-    }
-
+    background-image: url('images/zendesk.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media screen and (max-width: 736px) {
-
     .icon.major {
         margin: 0 0 1.5em 0;
         padding: 0.35em;
-    }
-
-    .icon.major:before {
-        font-size: 3.5rem;
     }
 
 }
@@ -2463,9 +2459,6 @@ input[type="radio"]:focus+label:before {
     border-color: rgba(255, 255, 255, 0.35);
 }
 
-.icon.major:before {
-    border-color: rgba(255, 255, 255, 0.35);
-}
 
 .icon.alt {
     border-color: rgba(255, 255, 255, 0.35);
@@ -3033,7 +3026,7 @@ table.alt tbody tr td {
 .statistics li strong,
 .statistics li b {
     display: block;
-    font-size: 2em;
+    font-size: 1em;
     line-height: 1.1;
     color: inherit !important;
     font-weight: 300;
@@ -3664,10 +3657,6 @@ body.is-preload #header.alt .logo {
 }
 
 #main .icon.major {
-    border-color: #dddddd;
-}
-
-#main .icon.major:before {
     border-color: #dddddd;
 }
 
